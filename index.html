@@ -7,51 +7,54 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>MediMap</h1>
-        <nav>
-            <ul>
-                <li><button id="bed-check-btn">Bed Check</button></li>
-                <li><button id="doctor-availability-btn">Doctor Availability</button></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <h1>MediMap</h1>
+    <nav>
+        <ul>
+            <li><button id="check-bed-btn">Bed Check</button></li>
+            
+            <li><button id="doctor-availability-btn">Doctor Availability</button></li>
+            <li><button id="sign-btn">Sign Up</button></li>
+        </ul>
 
-    <main>
-        <section id="bed-check">
-            <h2>Bed Availability Check</h2>
-            <button id="check-bed-btn">Check Bed Availability</button>
-            <p id="bed-status"></p>
-        </section>
+    </nav>
+</header>
 
-        <section id="doctor-availability">
-            <h2>Doctor Availability</h2>
-            <button id="check-doctor-btn">Check Doctor Availability</button>
-            <p id="doctor-status"></p>
-        </section>
-    </main>
+<main>
+    <section id="bed-check">
+        <h2>Bed Availability Check</h2>
+        <button id="check-bed-btn">Check Bed Availability</button>
+        <p id="bed-status"></p> <!-- This is where the bed availability will be displayed -->
+    </section>
 
-    <!-- Doctor Availability Modal -->
-    <div id="doctor-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" id="close-modal">&times;</span>
-            <h2>Select Doctor Specialization</h2>
-            <select id="specialization-select">
-                <option value="">Select Specialization</option>
-                <option value="Cardiologist">Cardiologist</option>
-                <option value="Dermatologist">Dermatologist</option>
-                <option value="Gynecologist">Gynecologist</option>
-                <option value="Pediatrician">Pediatrician</option>
-            </select>
-            <button id="check-doctor-specialization">Check Availability</button>
-            <div id="doctor-availability-results"></div>
-        </div>
+    <section id="doctor-availability">
+        <h2>Doctor Availability</h2>
+        <button id="check-doctor-btn">Check Doctor Availability</button>
+        <p id="doctor-status"></p>
+    </section>
+</main>
+
+<!-- Doctor Availability Modal -->
+<div id="doctor-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close-modal">&times;</span>
+        <h2>Select Doctor Specialization</h2>
+        <select id="specialization-select">
+            <option value="">Select Specialization</option>
+            <option value="Cardiologist">Cardiologist</option>
+            <option value="Dermatologist">Dermatologist</option>
+            <option value="Gynecologist">Gynecologist</option>
+            <option value="Pediatrician">Pediatrician</option>
+        </select>
+        <button id="check-doctor-specialization">Check Availability</button>
+        <div id="doctor-availability-results"></div>
     </div>
+</div>
 
-    <footer>
-        <p>&copy; 2024 Healthcare Service. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 Healthcare Service. All rights reserved.</p>
+</footer>
 
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

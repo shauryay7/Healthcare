@@ -88,21 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-document.getElementById("check-bed-btn").addEventListener("click", function() {
-    fetch('/api/bed-check')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("bed-status").textContent = data;
-        })
-        .catch(error => console.error('Error:', error));
-});
-
-document.getElementById("check-doctor-btn").addEventListener("click", function() {
-    const specialization = document.getElementById("specialization-select").value;
-    fetch(`/api/doctor-availability?specialization=${specialization}`)
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("doctor-availability-results").textContent = data;
-        })
-        .catch(error => console.error('Error:', error));
+document.getElementById('sign-btn').addEventListener('click', function() {
+    window.location.href = 'goto.html'; // Replace 'signup.html' with the actual path to your signup page
 });
